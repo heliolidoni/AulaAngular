@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "SqlServerConnection": "Data Source=localhost;Initial Catalog=dbCurso;User Id=sa;Password=.Lidoni1991"
+  }
+}

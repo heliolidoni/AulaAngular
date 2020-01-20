@@ -1,0 +1,52 @@
+<div class="text-center">
+  <form class="form-signin">
+    <h1 class="h4 mb-4">Login do Cliente</h1>
+    <label class="sr-only" for="inputEmail">EMail</label>
+    <input class="form-control mb-2"
+           type="email"
+           id="inputEmail"
+           name="inputEmail"
+           placeholder="E-Mail"
+           [ngClass]="{
+            'is-invalid': email.invalid && (email.dirty || email.touch),
+            'is-valid': email.valid && (email.dirty || email.touch)
+           }"
+           [(ngModel)]="usuario.email"
+           #email="ngModel"
+           email
+           required />
+
+    <div class="invalid-feedback mb-2" *ngIf="email.invalid &&(email.dirty || email.touched)">
+      <div *ngIf="email.errors.required">
+        Email deve ser preenchido
+      </div>
+      <div *ngIf="email.errors.email">
+        Formato é incorreto 
+      </div>
+    </div>
+
+    <label class="sr-only" for="inputSenha">Senha</label>
+    <input class="form-control mb-2"
+           type="password"
+           id="inputSenha"
+           name="senha"
+           placeholder="Senha"
+           [ngClass]="{
+            'is-invalid': senha.invalid && (senha.dirty || senha.touch),
+            'is-valid': senha.valid && (senha.dirty || senha.touch)
+           }"
+           [(ngModel)]="usuario.senha"
+           #senha="ngModel"
+           required />
+
+    <div class="invalid-feedback mb-2" *ngIf="senha.invalid &&(senha.dirty || senha.touched)">
+      <div *ngIf="senha.errors.required">
+        Senha seu besta é podre.
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-block" type="submit" (click)="entrar()">Entrar</button>
+
+    <img src="\assets\imgs\buy.jpg" />
+  </form>
+</div>
