@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Repositorio.Contexto;
 using Repositorio.Repositorios;
-
+//Teste Git
 namespace Web
 {
     public class Startup
