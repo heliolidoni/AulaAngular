@@ -1,0 +1,6 @@
+node_modules/
+Dominio/obj/
+Dominio/bin/
+Repositorio/obj/
+Repositorio/bin/
+.vs/
