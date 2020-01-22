@@ -24,7 +24,7 @@ namespace Web.Controllers
             }
             catch (Exception Ex)
             {
-                return BadRequest(Ex.ToString()); //teste
+                return BadRequest(Ex.ToString());
             }
         }
 
