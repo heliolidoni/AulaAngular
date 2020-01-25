@@ -3,4 +3,8 @@ Dominio/obj/
 Dominio/bin/
 Repositorio/obj/
 Repositorio/bin/
+NodejsWebApp/bin/
+NodejsWebApp/obj/
+ApiRobustas.Domain/bin/
+ApiRobustas.Domain/obj/
 .vs/

@@ -1,6 +1,5 @@
 ﻿using Dominio.Entidades;
 using Dominio.ObjetoDeValor;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Repositorio.Config;
 

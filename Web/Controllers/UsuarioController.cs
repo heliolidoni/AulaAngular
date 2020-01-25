@@ -10,7 +10,7 @@ namespace Web.Controllers
         {
             try
             {
-                return Ok();
+                return Ok(); 
             }
             catch (Exception e)
             {
