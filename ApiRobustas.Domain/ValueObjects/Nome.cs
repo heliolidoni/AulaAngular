@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiRobustas.Domain.ValueObjects
+﻿namespace ApiRobustas.Domain.ValueObjects
 {
     public class Nome
     {

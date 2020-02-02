@@ -1,4 +1,6 @@
 ﻿using ApiRobustas.Domain.Arguments.Jogador;
+using ApiRobustas.Domain.Entities;
+using System;
 
 namespace ApiRobustas.Domain.Interface.Repositories
 {
@@ -6,6 +8,6 @@ namespace ApiRobustas.Domain.Interface.Repositories
     {
         AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request);
 
-        AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request);
+        Guid AdicionarJogador(Jogador jogador);
     }
 }

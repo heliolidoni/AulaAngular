@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiRobustas.Domain.ValueObjects
+﻿namespace ApiRobustas.Domain.ValueObjects
 {
     public class Email
     {
-        public string enderecoEmail { get; set; }
+        private string email;
+
+        public Email(string email)
+        {
+            this.email = email;
+        }
+
+        public string EnderecoEmail { get; private set; }
     }
 }

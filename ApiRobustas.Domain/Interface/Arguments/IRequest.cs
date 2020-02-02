@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiRobustas.Domain.Interface.Arguments
+﻿namespace ApiRobustas.Domain.Interface.Arguments
 {
     public interface IRequest
     {

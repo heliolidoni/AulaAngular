@@ -1,6 +1,8 @@
 ﻿using ApiRobustas.Domain.Arguments.Jogador;
+using ApiRobustas.Domain.Entities;
 using ApiRobustas.Domain.Interface.Repositories;
 using ApiRobustas.Domain.Interface.Services;
+using ApiRobustas.Domain.ValueObjects;
 using System;
 
 namespace ApiRobustas.Domain.Services
@@ -16,10 +18,14 @@ namespace ApiRobustas.Domain.Services
 
         public AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request)
         {
-            Guid id = _repositoryJogador.AdicionarJogador(request).Id;
+            Jogador _jogador = new Jogador(request.Email, request.Senha);
+
+            _jogador.Nome = request.Nome;
+            _jogador.Status = Enum.EnumSituacaoJogador.EmAndamento;
+
+            Guid id = _repositoryJogador.AdicionarJogador(_jogador);
 
             return new AdicionarJogadorResponse() { Id = id, Message = "Adicionado com sucesso!"};
-
         }
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
@@ -29,27 +35,15 @@ namespace ApiRobustas.Domain.Services
                 throw new Exception("Errow AutenticarJogador");
             }
 
-            if(String.IsNullOrEmpty(request.Email))
+            var _email = new Email(request.Email);
+            var jogador = new Jogador(_email, request.Senha);
+
+            if (jogador.IsInvalid())
             {
-
-            }
-
-            if (IsEmail(request.Email))
-            {
-
-            }
-
-            if (String.IsNullOrEmpty(request.Senha))
-            {
-
+                return null;
             }
 
             return _repositoryJogador.AutenticarJogador(request);
-        }
-
-        private bool IsEmail(string email)
-        {
-            return true;
         }
     }
 }

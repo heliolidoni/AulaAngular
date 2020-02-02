@@ -59,7 +59,7 @@ namespace Web.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest("CAindo aqui");
+                return BadRequest("Bad Request " + e.Message);
             }
         }
     }

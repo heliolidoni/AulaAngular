@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiRobustas.Domain.Enum
+﻿namespace ApiRobustas.Domain.Enum
 {
     public enum  EnumSituacaoJogador
     {
