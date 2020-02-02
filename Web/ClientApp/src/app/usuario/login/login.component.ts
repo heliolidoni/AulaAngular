@@ -8,13 +8,15 @@ import { UsuarioServico } from "../../servicos/usuario/usuario.servico";
     templateUrl: "./login.component.html",
     styleUrls: ["./login.component.css"]
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
     public usuario;
     public returnUrl: string;
+    public mensagem: string;
+    private ativar_spinner: boolean;
 
     constructor(private router: Router,
-                private activatedRouter: ActivatedRoute,
-                private usuarioServico: UsuarioServico) {
+        private activatedRouter: ActivatedRoute,
+        private usuarioServico: UsuarioServico) {
         this.usuario = new Usuario();
     }
 
@@ -23,18 +25,23 @@ export class LoginComponent implements OnInit{
     }
 
     entrar() {
+        this.ativar_spinner = true;
         this.usuarioServico.verificarUsuario(this.usuario)
             .subscribe(
-            data => {
-
-            },
-            err => {
-
-            }
+                usuario_json => {
+                    //sessionStorage.setItem("usuario-autenticado", "1");
+                    this.usuarioServico.usuario = usuario_json;
+                    if (this.returnUrl == null) {
+                        this.router.navigate(['/']);
+                    } else {
+                        this.router.navigate([this.returnUrl]);
+                    }
+                },
+                err => {
+                    this.mensagem = err.error;
+                    console.log(err.error);
+                    this.ativar_spinner = false;
+                }
         );
-        //if (this.usuario.email == "1@1.com" && this.usuario.senha == "123") {
-        //    sessionStorage.setItem("usuario-autenticado", "1");
-        //    this.router.navigate([this.returnUrl]);
-        //}
     }
 }

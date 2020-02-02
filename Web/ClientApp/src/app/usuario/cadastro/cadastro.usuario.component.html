@@ -21,7 +21,7 @@
         Email deve ser preenchido
       </div>
       <div *ngIf="email.errors.email">
-        Formato é incorreto 
+        Formato é incorreto
       </div>
     </div>
 
@@ -50,10 +50,8 @@
       Entrar
     </button>
 
-    <div>Novo por aqui? <a [routerLink]='["/novo-usuario"]'>Cadastre-se</a></div>
-
     <div *ngIf="mensagem" class="alert alert-danger">
-      {{mensagem}} 
+      {{mensagem}}
     </div>
 
     <img src="\assets\imgs\buy.jpg" />

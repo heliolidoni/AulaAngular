@@ -4,6 +4,6 @@ namespace ApiRobustas.Domain.Interface.Services
 {
     public interface IServicePlataforma
     {
-        AdicionarPlataformaResponse AdicionarPlataforma(AdicionarPlataformaRequest);
+        //AdicionarPlataformaResponse AdicionarPlataforma(AdicionarPlataformaRequest);
     }
 }
