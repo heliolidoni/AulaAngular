@@ -3,13 +3,18 @@ using ApiRobustas.Domain.Entities;
 using ApiRobustas.Domain.Interface.Repositories;
 using ApiRobustas.Domain.Interface.Services;
 using ApiRobustas.Domain.ValueObjects;
+using prmToolkit.NotificationPattern;
 using System;
 
 namespace ApiRobustas.Domain.Services
 {
-    public class ServiceJogador : IServiceJogador
+    public class ServiceJogador : Notifiable, IServiceJogador
     {
         private readonly IRepositoryJogador _repositoryJogador;
+
+        public ServiceJogador()
+        {
+        }
 
         public ServiceJogador(IRepositoryJogador repositoryJogador)
         {
@@ -36,9 +41,11 @@ namespace ApiRobustas.Domain.Services
             }
 
             var _email = new Email(request.Email);
-            var jogador = new Jogador(_email, request.Senha);
+            var _jogador = new Jogador(_email, request.Senha);
 
-            if (jogador.IsInvalid())
+            AddNotifications(_jogador);
+
+            if (_jogador.IsInvalid())
             {
                 return null;
             }

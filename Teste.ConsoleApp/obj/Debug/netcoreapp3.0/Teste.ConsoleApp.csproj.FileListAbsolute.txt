@@ -1,0 +1,16 @@
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.exe
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.deps.json
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.runtimeconfig.json
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.runtimeconfig.dev.json
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.dll
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\Teste.ConsoleApp.pdb
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\prmToolkit.NotificationPattern.dll
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\en-US\prmToolkit.NotificationPattern.resources.dll
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\ApiRobustas.Domain.dll
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\bin\Debug\netcoreapp3.0\ApiRobustas.Domain.pdb
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.AssemblyInfo.cs
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.csproj.CopyComplete
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.dll
+C:\Users\lucas\Desktop\Projetos\Testes\Teste.ConsoleApp\obj\Debug\netcoreapp3.0\Teste.ConsoleApp.pdb

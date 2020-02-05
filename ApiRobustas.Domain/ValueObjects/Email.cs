@@ -2,13 +2,11 @@
 {
     public class Email
     {
-        private string email;
-
         public Email(string email)
         {
-            this.email = email;
+            this.EnderecoEmail = email;
         }
 
-        public string EnderecoEmail { get; private set; }
+        public string EnderecoEmail { get; set; }
     }
 }
